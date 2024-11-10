@@ -4,7 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pre-Save My Upcoming Release</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset body styles and apply flexbox centering */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+            text-align: center;
+            background-color: #f7f7f7;
+        }
+
+        /* Hero section styles */
+        .hero {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        /* Red button styles */
+        .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #ff0000;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .cta-button:hover {
+            background-color: #cc0000;
+        }
+
+        /* Footer styles */
+        footer {
+            padding: 15px;
+            font-size: 0.9em;
+            color: #888;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 1.8em;
+            }
+
+            .hero p {
+                font-size: 1em;
+            }
+
+            .cta-button {
+                font-size: 1em;
+                padding: 12px 24px;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Hero Section -->
@@ -16,7 +89,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; voxs.wav. All Rights Reserved.</p>
+        <p>&copy; 2024 voxs.wav. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
